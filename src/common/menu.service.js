@@ -26,7 +26,25 @@ function MenuService($http, ApiPath) {
       return response.data;
     });
   };
+  
+  //service to myinfo
+  
+  service.getMenuItem = function (shortName) {
+    var url = ApiPath + "/menu_items/" + shortName + ".json";
+    return $http.get(url).then(
+      function (response) {
+        return response.data;
+      }
+    );
+  }
+  
+  service.setInfo = function (info) {
+    service.info = info;
+  };
 
+  service.getInfo = function() {
+    return service.info;
+  }
 }
 
 
