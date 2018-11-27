@@ -1,2 +1,3 @@
-# mod5-solution
-mod5-solution
+### Restaurant Menu with AngularJS
+
+[Website](https://acqfel.github.io/mod5-solution/)
